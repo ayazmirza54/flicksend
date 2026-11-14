@@ -1,0 +1,10 @@
+{
+  "name": "flicksend",
+  "private": true,
+  "description": "Flick photos and videos from your phone onto your laptop screen.",
+  "scripts": {
+    "test": "npm run test:protocol && npm run test:native",
+    "test:protocol": "node --test --experimental-strip-types --no-warnings shared/protocol.test.ts",
+    "test:native": "node apps/desktop/scripts/test-native.mjs"
+  }
+}
